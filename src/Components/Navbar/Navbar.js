@@ -26,6 +26,7 @@ class Navbar extends Component {
             root.style.setProperty('--background-color', '#ffffff');
             root.style.setProperty('--primary-text-color', '#021b39');
             root.style.setProperty('--primary-text-color-hover', '#B46506');
+            root.style.setProperty('--secondary-text-color', '#fff');
         } else {
             document.body.classList.add('dark-mode');
             this.setState({ mode: 'dark' });
@@ -33,6 +34,7 @@ class Navbar extends Component {
             root.style.setProperty('--background-color', '#272733');
             root.style.setProperty('--primary-text-color', '#2986b8');
             root.style.setProperty('--primary-text-color-hover', '#a67de9');
+            root.style.setProperty('--secondary-text-color', '#a67de9');
         }
     }
 

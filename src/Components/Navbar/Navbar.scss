@@ -1,6 +1,7 @@
 @import '../../Assets/variables.scss';
 
 .navbar-wrapper {
+    z-index: 2000;
     position:fixed;
     top: 0;
     width: 100%;
