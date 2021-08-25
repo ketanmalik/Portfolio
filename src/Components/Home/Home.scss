@@ -1,7 +1,7 @@
 @import '../../Assets/variables.scss';
 
 .home-wrapper {
-    margin-top: 4rem;
+    // margin-top: 4rem;
 }
 
 .intro-wrapper {
@@ -12,7 +12,7 @@
 .home-intro {
     z-index: 1000;
     position: absolute;
-    top: 20rem;
+    top: 35vh;
     height: 15rem;
     width: 40rem;
     background: rgba(6, 24, 61, 0.5);
@@ -38,21 +38,64 @@
     blink-caret .5s step-end 0s infinite,
     hide-caret 0.7s ease-in 3s infinite;
 
-  }
+}
   
-  /* The typing effect */
-  @keyframes typing {
+/* The typing effect */
+@keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
+}
   
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
-  }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 
-  @keyframes hide-caret {
-    from, to { border-color: transparent }
-    50% { border-color: transparent }
-  }
+@keyframes hide-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent }
+}
+
+.explore-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+ 
+.explore-text {
+  font-size: 2.5em;
+  position: absolute;
+  bottom: 3vh;
+  color: #fff
+}
+
+.home-explore-btn {
+  animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
