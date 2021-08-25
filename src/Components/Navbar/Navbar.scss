@@ -1,0 +1,49 @@
+@import '../../Assets/variables.scss';
+
+.navbar-wrapper {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 1px #19191938;
+}
+
+.navbar-links-list {
+    font-size: 1.6em;
+    margin: 0 !important;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links-right-list {
+    font-size: 1.6em;
+    margin: 0 !important;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links-list li {
+    margin-right: 2em;
+}
+
+.navbar-links-right-list li {
+    margin-right: 1em;
+}
+
+.navbar-links-list li a,
+.navbar-links-right-list li a {
+    text-decoration: none;
+    color: $primary-text-color;
+}
+
+.navbar-links-list li a:hover,
+.navbar-links-right-list li a:hover,
+.active {
+    color: $primary-text-color-hover !important;
+}

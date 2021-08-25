@@ -1,21 +1,15 @@
-$bg-dark-mode: rgb(0, 0, 0);
-$bg-light-mode: rgb(255, 255, 255);
+@import './Assets/variables.scss';
 
 body {
-  background-color: $bg-light-mode;
-}
-
-body.dark-mode {
-  background-color: $bg-dark-mode;
-  color: pink;
-
+  background-color: $bg-color;
+  font-family: 'Oswald', sans-serif;
 }
 
 #tsparticles {
-  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background: linear-gradient(-45deg, #262491, #245a91, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 12s ease infinite;
+  height: 100vh;
 }
 
 @keyframes gradient {
