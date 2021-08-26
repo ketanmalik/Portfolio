@@ -1,0 +1,25 @@
+@import '../../Assets/variables.scss';
+
+#about-wrapper {
+    text-align: center;
+    margin-top: 6em;
+}
+
+.my-img {
+    width: 30vh;
+    margin-right: 5em;
+    border-radius: 50%;
+    box-shadow: 0 10px 16px 0 #7e7e7e !important;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text p {
+    width: 85vh;
+    font-weight: 100;
+    font-size: 25px;
+}

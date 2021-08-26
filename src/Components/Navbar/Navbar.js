@@ -9,12 +9,7 @@ class Navbar extends Component {
         super(props);
         this.state = {
             mode: 'light',
-            activeLink: '',
         }
-    }
-
-    setActiveLink = (activeLink) => {
-        this.setState({ activeLink });
     }
 
     switchMode = () => {
@@ -28,6 +23,12 @@ class Navbar extends Component {
             root.style.setProperty('--primary-text-color', '#021b39');
             root.style.setProperty('--primary-text-color-hover', '#B46506');
             root.style.setProperty('--secondary-text-color', '#fff');
+            root.style.setProperty('--heading-text-color', '#3a80d4');
+            root.style.setProperty('--primary-p-text-color', '#021b39');
+            root.style.setProperty('--card-tech-border', '#b69dd0');
+            root.style.setProperty('--card-tech-bg', '#d8bdf56e');
+            root.style.setProperty('--card-tech-color', '#723ba7');
+            root.style.setProperty('--anchor-link-color', '#551A8B');
         } else {
             document.body.classList.add('dark-mode');
             this.setState({ mode: 'dark' });
@@ -36,6 +37,11 @@ class Navbar extends Component {
             root.style.setProperty('--primary-text-color', '#2986b8');
             root.style.setProperty('--primary-text-color-hover', '#a67de9');
             root.style.setProperty('--secondary-text-color', '#a67de9');
+            root.style.setProperty('--primary-p-text-color', '#ffffff');
+            root.style.setProperty('--card-tech-border', '#a19ca1');
+            root.style.setProperty('--card-tech-bg', '#00000063');
+            root.style.setProperty('--card-tech-color', '#ffffff');
+            root.style.setProperty('--anchor-link-color', '#bdd1f1');
         }
     }
 
@@ -44,18 +50,17 @@ class Navbar extends Component {
     };
 
     render() {
-        const { activeLink, mode } = this.state;
+        const { mode } = this.state;
         return <div className="navbar-wrapper">
             <ul className="navbar-links-list">
-                <li><Link activeClass="active" to="about-wrapper" spy={true} smooth={true} duration={500}>About</Link></li>
-                <li><Link activeClass="active" to="skills-wrapper" spy={true} smooth={true} duration={500}>Skills</Link></li>
-                <li><Link activeClass="active" to="projects-wrapper" spy={true} smooth={true} duration={500}>Project</Link></li>
-                <li><Link activeClass="active" to="resume-wrapper" spy={true} smooth={true} duration={500}>Resume</Link></li>
-                <li><Link activeClass="active" to="contact-wrapper" spy={true} smooth={true} duration={500}>Contact</Link></li>
+                <li><Link to="about-wrapper" spy={true} smooth={true} duration={500}>About</Link></li>
+                <li><Link to="projects-wrapper" spy={true} smooth={true} duration={500}>Projects</Link></li>
+                <li><Link to="resume-wrapper" spy={true} smooth={true} duration={500}>Resume</Link></li>
+                <li><Link to="contact-wrapper" spy={true} smooth={true} duration={500}>Contact</Link></li>
             </ul>
 
             <ul className="navbar-links-right-list">
-                <li><Link activeClass="active" to="home-wrapper" spy={true} smooth={true} duration={500}>Ketan Malik</Link></li>
+                <li><Link to="home-wrapper" spy={true} smooth={true} duration={500}>Ketan Malik</Link></li>
                 <DarkModeToggle
                     onChange={this.switchMode}
                     checked={mode === 'dark'}

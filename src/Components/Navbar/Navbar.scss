@@ -44,7 +44,6 @@
 }
 
 .navbar-links-list li a:hover,
-.navbar-links-right-list li a:hover,
-.active {
+.navbar-links-right-list li a:hover {
     color: $primary-text-color-hover !important;
 }
