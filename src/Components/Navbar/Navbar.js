@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { Link, animateScroll as scroll } from "react-scroll";
 import DarkModeToggle from "react-dark-mode-toggle";
 import './Navbar.scss';
 
@@ -8,12 +9,7 @@ class Navbar extends Component {
         super(props);
         this.state = {
             mode: 'light',
-            activeLink: '',
         }
-    }
-
-    setActiveLink = (activeLink) => {
-        this.setState({ activeLink });
     }
 
     switchMode = () => {
@@ -27,6 +23,12 @@ class Navbar extends Component {
             root.style.setProperty('--primary-text-color', '#021b39');
             root.style.setProperty('--primary-text-color-hover', '#B46506');
             root.style.setProperty('--secondary-text-color', '#fff');
+            root.style.setProperty('--heading-text-color', '#3a80d4');
+            root.style.setProperty('--primary-p-text-color', '#021b39');
+            root.style.setProperty('--card-tech-border', '#b69dd0');
+            root.style.setProperty('--card-tech-bg', '#d8bdf56e');
+            root.style.setProperty('--card-tech-color', '#723ba7');
+            root.style.setProperty('--anchor-link-color', '#551A8B');
         } else {
             document.body.classList.add('dark-mode');
             this.setState({ mode: 'dark' });
@@ -35,23 +37,30 @@ class Navbar extends Component {
             root.style.setProperty('--primary-text-color', '#2986b8');
             root.style.setProperty('--primary-text-color-hover', '#a67de9');
             root.style.setProperty('--secondary-text-color', '#a67de9');
+            root.style.setProperty('--primary-p-text-color', '#ffffff');
+            root.style.setProperty('--card-tech-border', '#a19ca1');
+            root.style.setProperty('--card-tech-bg', '#00000063');
+            root.style.setProperty('--card-tech-color', '#ffffff');
+            root.style.setProperty('--anchor-link-color', '#bdd1f1');
         }
     }
 
+    scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     render() {
-        const { activeLink, mode } = this.state;
+        const { mode } = this.state;
         return <div className="navbar-wrapper">
             <ul className="navbar-links-list">
-                <li><Link className={activeLink === 'about' ? 'active' : ''} to='/about' onClick={() => this.setActiveLink('about')}>About</Link></li>
-                <li><Link className={activeLink === 'skills' ? 'active' : ''} to='/skills' onClick={() => this.setActiveLink('skills')}>Skills</Link></li>
-                <li><Link className={activeLink === 'project' ? 'active' : ''} to="/project" onClick={() => this.setActiveLink('project')}>Project</Link></li>
-                <li><Link className={activeLink === 'resume' ? 'active' : ''} to="/resume" onClick={() => this.setActiveLink('resume')}>Resume</Link></li>
-                <li><Link className={activeLink === 'contact' ? 'active' : ''} to="/contact" onClick={() => this.setActiveLink('contact')}>Contact</Link></li>
+                <li><Link to="about-wrapper" spy={true} smooth={true} duration={500}>About</Link></li>
+                <li><Link to="projects-wrapper" spy={true} smooth={true} duration={500}>Projects</Link></li>
+                <li><Link to="resume-wrapper" spy={true} smooth={true} duration={500}>Resume</Link></li>
+                <li><Link to="contact-wrapper" spy={true} smooth={true} duration={500}>Contact</Link></li>
             </ul>
 
-            {/* <button onClick={this.switchMode}>click</button> */}
             <ul className="navbar-links-right-list">
-                <li><Link to="/" onClick={() => this.setActiveLink('')}>Ketan Malik</Link></li>
+                <li><Link to="home-wrapper" spy={true} smooth={true} duration={500}>Ketan Malik</Link></li>
                 <DarkModeToggle
                     onChange={this.switchMode}
                     checked={mode === 'dark'}
@@ -59,10 +68,7 @@ class Navbar extends Component {
                 />
                 <div style={{ marginRight: "1em" }}></div>
             </ul>
-            {/* <div className="navbar-right-align">
-
-            </div> */}
-
+            {/* <button onClick={this.scrollToTop}>scroll to top</button> */}
         </div>
     }
 }
