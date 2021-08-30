@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
@@ -8,11 +7,10 @@ import Resume from './Components/Resume/Resume';
 import Contact from './Components/Contact/Contact';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faChevronCircleDown, faGamepad, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
-// import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faChevronCircleDown, faGamepad, faLaptopCode, faFilePdf, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
 
-library.add(fab, faChevronCircleDown, faGamepad, faLaptopCode);
+library.add(fab, faChevronCircleDown, faGamepad, faLaptopCode, faFilePdf, faEnvelope);
 
 function App() {
   return (

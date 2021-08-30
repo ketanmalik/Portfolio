@@ -21,14 +21,17 @@ class Navbar extends Component {
             const root = document.documentElement;
             root.style.setProperty('--background-color', '#ffffff');
             root.style.setProperty('--primary-text-color', '#021b39');
-            root.style.setProperty('--primary-text-color-hover', '#B46506');
+            root.style.setProperty('--primary-text-color-hover', '#397fd4');
             root.style.setProperty('--secondary-text-color', '#fff');
             root.style.setProperty('--heading-text-color', '#3a80d4');
             root.style.setProperty('--primary-p-text-color', '#021b39');
             root.style.setProperty('--card-tech-border', '#b69dd0');
             root.style.setProperty('--card-tech-bg', '#d8bdf56e');
             root.style.setProperty('--card-tech-color', '#723ba7');
-            root.style.setProperty('--anchor-link-color', '#551A8B');
+            root.style.setProperty('--anchor-link-color', '#143966');
+            root.style.setProperty('--footer-bg', '#143966');
+            root.style.setProperty('--footer-title-color', '#fff');
+            root.style.setProperty('--footer-icon', '#fff');
         } else {
             document.body.classList.add('dark-mode');
             this.setState({ mode: 'dark' });
@@ -42,6 +45,9 @@ class Navbar extends Component {
             root.style.setProperty('--card-tech-bg', '#00000063');
             root.style.setProperty('--card-tech-color', '#ffffff');
             root.style.setProperty('--anchor-link-color', '#bdd1f1');
+            root.style.setProperty('--footer-bg', '#20202b');
+            root.style.setProperty('--footer-title-color', '#397fd4');
+            root.style.setProperty('--footer-icon', '#bdd1f1');
         }
     }
 

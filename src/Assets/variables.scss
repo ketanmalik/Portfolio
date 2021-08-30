@@ -1,14 +1,17 @@
 :root {
     --background-color: white;
     --primary-text-color: #021b39;
-    --primary-text-color-hover: #B46506;
+    --primary-text-color-hover: #397fd4;
     --secondary-text-color: #fff;
     --heading-text-color: #3a80d4;
     --primary-p-text-color: #021b39;
     --card-tech-border: #b69dd0;
     --card-tech-bg: #d8bdf56e;
     --card-tech-color: #723ba7;
-    --anchor-link-color: #551A8B;
+    --anchor-link-color: #143966;
+    --footer-bg: #143966;
+    --footer-title-color: #fff;
+    --footer-icon: #fff;
  
 }
 $bg-color: var(--background-color);
@@ -21,3 +24,6 @@ $card-tech-border: var(--card-tech-border);
 $card-tech-bg: var(--card-tech-bg);
 $card-tech-color: var(--card-tech-color);
 $anchor-link-color: var(--anchor-link-color);
+$footer-bg: var(--footer-bg);
+$footer-title-color: var(--footer-title-color);
+$footer-icon: var(--footer-icon);
