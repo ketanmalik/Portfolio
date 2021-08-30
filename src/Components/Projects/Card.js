@@ -6,8 +6,8 @@ class Card extends Component {
     render() {
         const { title, descriptionArr, techArr, gitLink, webLink } = this.props;
         const imgUrl = `/Images/${imageMapping[title]}`;
-        const description = descriptionArr.map((desc, i) => <p key={i}>{desc}</p>);
-        const technologies = techArr.map((tech, i) => <div key={i} className="card-inner-tech">{tech}</div>)
+        const description = descriptionArr && descriptionArr.map((desc, i) => <p key={i}>{desc}</p>);
+        const technologies = techArr && techArr.map((tech, i) => <div key={i} className="card-inner-tech">{tech}</div>)
         return <div className="card">
             <img className="card-img" src={`${imgUrl}`} alt="Project" />
             <div className="card-inner">

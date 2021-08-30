@@ -14,7 +14,6 @@
 .project-cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // row-gap: 20%;
     justify-content: center;
     row-gap: 6em;
 }
@@ -60,6 +59,7 @@
     color: $primary-p-text-color;
     margin-left: 5%;
     width: 90%;
+    font-size: 20px;
 }
 
 .card-inner-title {

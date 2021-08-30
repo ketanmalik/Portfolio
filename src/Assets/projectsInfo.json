@@ -1,0 +1,95 @@
+{
+    "project1": {
+        "title": "Falcon Aviation",
+        "description": [
+            "A fully responsive website build with create-react-app and hosted on Heroku; it mocks an Aircraft's parts manufacturing company",
+            "A user can explore the inventory, add items to the cart, place the order, and make payment via PayPal",
+            "Users can either create account or login using Google/Facebook to view orders and admins can perform CRUD operations on the inventory"
+        ],
+        "tech": [
+            "React",
+            "Redux",
+            "Node.js",
+            "Express.js",
+            "REST",
+            "HTML5",
+            "CSS3",
+            "Heroku",
+            "Bootstrap"
+        ],
+        "git": "https://github.com/ketanmalik/Final-Project/",
+        "web": "https://falconaviationproject.herokuapp.com/"
+    },
+    "project2": {
+        "title": "Driblets",
+        "description": [
+            "This one's a dynamic website I built when I wanted to learn GraphQL, ESRI's ArcGIS, and Semantic-UI React! It aims at reporting water leakages",
+            "Users can report a water leakage incident incident within the USA and can also track the status of their report",
+            "This project actually gave hands-on experience with a lot of new technologies I wanted to learn"
+        ],
+        "tech": [
+            "React",
+            "Redux",
+            "GraphQL",
+            "ESRI ArcGIS",
+            "Semantic-UI React",
+            "HTML5",
+            "CSS3",
+            "Heroku"
+        ],
+        "git": "https://github.com/ketanmalik/driblets/",
+        "web": "https://driblets.herokuapp.com/"
+    },
+    "project3": {
+        "title": "Tetris Game",
+        "description": [
+            "This was just a fun project when I wanted to play the plain-old Tetris game! Its mainly about JavaScript, HTML, and CSS",
+            "Players can play it on any device and can simply reset the game with just a press of a button. I also hosted it on Google Firebase so that I could play it anytime!"
+        ],
+        "tech": [
+            "React",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Google Firebase"
+        ],
+        "git": "https://github.com/ketanmalik/Tetris-Game/",
+        "web": "https://the-tetris-game.web.app/"
+    },
+    "project4": {
+        "title": "Target Redesign",
+        "description": [
+            "A team project to redesign existing Target's website to identify and overcome its shortcomings using various UX research methods",
+            "Our team went through Parallel Design, Online Surveys, and System Usability Scale research methods to identify the main pain points and resolve them",
+            "Along with Axure RP 10, we also used Balsamiq, Moqups, and Figma just to try different prototyping tools"
+        ],
+        "tech": [
+            "Axure RP 10",
+            "Figma",
+            "Balsamiq",
+            "Moqups",
+            "UI/UX Research Methods"
+        ],
+        "git": "https://cyuxsk.axshare.com/#id=5z2mbl&p=homepage/",
+        "web": "https://cyuxsk.axshare.com/#id=5z2mbl&p=homepage/"
+    },
+    "project5": {
+        "title": "Burger Builder",
+        "description": [
+            "A simple Burger Builder application created using create-react-app to add the ingredients to a burger and then finally order it! Firebase API were used in this project",
+            "This project was part of a Udemy course I took on React and it was one of the first projects I built while pursuing this online course",
+            "No CSS library was used for styling and everything was built from scratch in this course. I finally deployed it on Firebase "
+        ],
+        "tech": [
+            "React",
+            "Redux",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Google APIs",
+            "Google Firebase"
+        ],
+        "git": "https://github.com/ketanmalik/",
+        "web": "https://burger-builder-dbs.web.app/"
+    }
+}
