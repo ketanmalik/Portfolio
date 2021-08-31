@@ -6,7 +6,7 @@ import './Projects.scss';
 const Projects = () => {
     return (
         <div className="projects-wrapper">
-            <h1 className="title">Recent Projects</h1>
+            <h1 className="title projects">Recent Projects</h1>
             <div className="project-cards-wrapper">
                 {Object.entries(projectsInfo).map(([projectKey, project]) => {
                     return (

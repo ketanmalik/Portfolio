@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Contact.scss'
 
-const Cesume = () => {
+const Contact = () => {
     return <div className="contact-wrapper">
         <div>
             <h1 className="footer-title">Let's Connect</h1>
@@ -19,9 +19,9 @@ const Cesume = () => {
             </a>
         </div>
         <div className="copyright-text">
-            &copy;Copyright&emsp;|&emsp;Ketan Malik&emsp;|&emsp;2020
+            &copy;Copyright&emsp;|&emsp;Ketan Malik&emsp;|&emsp;2021
         </div>
     </div>
 }
 
-export default Cesume;
+export default Contact;

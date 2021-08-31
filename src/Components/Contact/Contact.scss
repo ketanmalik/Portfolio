@@ -26,6 +26,10 @@
     color: $footer-icon;
 }
 
+.footer-icon:hover {
+    color: $primary-text-color-hover;
+}
+
 .copyright-text {
     color: $footer-icon;
     margin-top: 2rem;

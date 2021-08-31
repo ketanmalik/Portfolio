@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import { Link, animateScroll as scroll } from "react-scroll";
 import DarkModeToggle from "react-dark-mode-toggle";
 import './Navbar.scss';

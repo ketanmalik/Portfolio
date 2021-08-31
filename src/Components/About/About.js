@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import img from '../../Assets/IMG.png';
 import './About.scss';
 
-class About extends Component {
-    render() {
-        return <div id="about-wrapper">
+const About = () => {
+    return (
+        <div id="about-wrapper">
             <h1 className="title">About</h1>
             <div className="about-text">
                 <img className="my-img" src={img} alt="Ketan Malik" />
@@ -35,7 +35,7 @@ class About extends Component {
                 </div>
             </div>
         </div>
-    }
+    )
 }
 
 export default About;

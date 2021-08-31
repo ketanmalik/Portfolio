@@ -1,8 +1,12 @@
 @import '../../Assets/variables.scss';
 
 .projects-wrapper {
-    margin-top: 6em;
+    margin-top: 10em;
     text-align: center;
+}
+
+.projects {
+    margin-bottom: 2em !important;
 }
 
 .project-cards-wrapper {
