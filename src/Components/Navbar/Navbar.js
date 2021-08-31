@@ -32,6 +32,8 @@ class Navbar extends Component {
             root.style.setProperty('--footer-bg', '#143966');
             root.style.setProperty('--footer-title-color', '#fff');
             root.style.setProperty('--footer-icon', '#fff');
+            root.style.setProperty('--card-bg', '#ffffffbf');
+            root.style.setProperty('--card-body-hidden-color', '#021b39');
         } else {
             document.body.classList.add('dark-mode');
             this.setState({ mode: 'dark' });
@@ -48,6 +50,8 @@ class Navbar extends Component {
             root.style.setProperty('--footer-bg', '#20202b');
             root.style.setProperty('--footer-title-color', '#397fd4');
             root.style.setProperty('--footer-icon', '#bdd1f1');
+            root.style.setProperty('--card-bg', '#0a0a0abf');
+            root.style.setProperty('--card-body-hidden-color', '#fff');
         }
     }
 

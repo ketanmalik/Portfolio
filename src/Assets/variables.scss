@@ -12,6 +12,8 @@
     --footer-bg: #143966;
     --footer-title-color: #fff;
     --footer-icon: #fff;
+    --card-bg: #ffffffbf;
+    --card-body-hidden-color: #021b39;
  
 }
 $bg-color: var(--background-color);
@@ -27,3 +29,5 @@ $anchor-link-color: var(--anchor-link-color);
 $footer-bg: var(--footer-bg);
 $footer-title-color: var(--footer-title-color);
 $footer-icon: var(--footer-icon);
+$card-bg: var(--card-bg);
+$card-body-hidden-color: var(--card-body-hidden-color);
