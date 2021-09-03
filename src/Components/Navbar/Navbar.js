@@ -33,6 +33,7 @@ class Navbar extends Component {
             root.style.setProperty('--footer-icon', '#fff');
             root.style.setProperty('--card-bg', '#ffffffbf');
             root.style.setProperty('--card-body-hidden-color', '#021b39');
+            root.style.setProperty('--go-to-top-icon-color', '#fff');
         } else {
             document.body.classList.add('dark-mode');
             this.setState({ mode: 'dark' });
@@ -51,6 +52,7 @@ class Navbar extends Component {
             root.style.setProperty('--footer-icon', '#bdd1f1');
             root.style.setProperty('--card-bg', '#0a0a0abf');
             root.style.setProperty('--card-body-hidden-color', '#fff');
+            root.style.setProperty('--go-to-top-icon-color', '#000');
         }
     }
 
