@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import imageMapping from '../../Assets/ImageMapping.json';
 
-class Card extends Component {
-    render() {
-        const { title, descriptionArr, techArr, gitLink, webLink } = this.props;
-        const imgUrl = `/Images/${imageMapping[title]}`;
-        const description = descriptionArr.map((desc, i) => <p key={i}>{desc}</p>);
-        const technologies = techArr.map((tech, i) => <div key={i} className="card-inner-tech">{tech}</div>)
-        return <div className="card">
-            <img className="card-img" src={`${imgUrl}`} alt="Project" />
-            <div className="card-inner">
-                {description}
-                <div className="card-inner-tech-list">
-                    {technologies}
+const Card = (props) => {
+    const { title, descriptionArr, techArr, gitLink, webLink } = props;
+    const imgUrl = `/Images/${imageMapping[title]}`;
+    const description = descriptionArr && descriptionArr.map((desc, i) => <p key={i}>{desc}</p>);
+    const technologies = techArr && techArr.map((tech, i) => <div key={i} className="card-body-hidden-tech">{tech}</div>)
+    return <a className="card" href={webLink} target="_blank" rel="noreferrer">
+        <div className="card-body">
+            <div style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: "cover" }} className="card-body-img">
+                <div className="card-body-hidden">
+                    {description}
+                    <div className="card-body-hidden-tech-list">
+                        {technologies}
+                    </div>
                 </div>
             </div>
+        </div>
+        <div className="card-footer">
             <h2 className="card-inner-title">{title}</h2>
             {title === 'Target Redesign' ?
                 <div className="card-inner-link">
@@ -38,7 +41,7 @@ class Card extends Component {
                     </div>
                 )}
         </div>
-    }
+    </a>
 }
 
 export default Card;

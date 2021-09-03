@@ -43,4 +43,14 @@ li {
   font-size: 2.5rem;
   font-weight: 400;
   color: $heading-text-color;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: $anchor-link-color;
+}
+
+a:hover {
+  color: $primary-text-color-hover;
 }

@@ -1,0 +1,21 @@
+@import '../../Assets/variables.scss';
+
+.resume-wrapper {
+    margin-top: 10em;
+    text-align: center;
+}
+
+.resume-icon {
+    margin-top: 4rem;
+    color: $anchor-link-color;
+    transition: color ease-in-out 300ms;
+}
+
+.resume-icon:active,
+.resume-icon:visited {
+    color: $anchor-link-color;
+}
+
+.resume-icon:hover {
+    color: $primary-text-color-hover;
+}

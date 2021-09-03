@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
 import Particles from 'react-particles-js';
 import particlesConfig from '../../Assets/particlesConfig.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-scroll";
 import './Home.scss';
 
-class Home extends Component {
-    render() {
-        return <div className="home-wrapper">
+const Home = () => {
+    return (
+        <div className="home-wrapper">
             <Particles params={particlesConfig} />
             <div className="intro-wrapper">
                 <div className="home-intro">
@@ -25,9 +24,8 @@ class Home extends Component {
                     <FontAwesomeIcon icon="chevron-circle-down" className='home-explore-btn' size="1x" />
                 </Link>
             </div>
-
         </div>
-    }
+    )
 }
 
 export default Home;
