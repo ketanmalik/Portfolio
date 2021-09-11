@@ -65,6 +65,7 @@ class Navbar extends Component {
         return <div className="navbar-wrapper">
             <ul className="navbar-links-list">
                 <li><Link to="about-wrapper" spy={true} smooth={true} duration={500}>About</Link></li>
+                {/* <li><Link to="timeline-wrapper" spy={true} smooth={true} duration={500}>Timeline</Link></li> */}
                 <li><Link to="projects-wrapper" spy={true} smooth={true} duration={500}>Projects</Link></li>
                 <li><Link to="resume-wrapper" spy={true} smooth={true} duration={500}>Resume</Link></li>
                 <li><Link to="contact-wrapper" spy={true} smooth={true} duration={500}>Contact</Link></li>

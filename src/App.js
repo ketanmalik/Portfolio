@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import Timeline from './Components/Timeline/Timeline';
 import Projects from './Components/Projects/Projects';
 import Resume from './Components/Resume/Resume';
 import Contact from './Components/Contact/Contact';
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      {/* <Timeline /> */}
       <Projects />
       <Resume />
       <Contact />
