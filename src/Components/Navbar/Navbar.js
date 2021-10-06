@@ -33,6 +33,7 @@ class Navbar extends Component {
             root.style.setProperty('--footer-icon', '#fff');
             root.style.setProperty('--card-bg', '#ffffffbf');
             root.style.setProperty('--card-body-hidden-color', '#021b39');
+            root.style.setProperty('--go-to-top-icon-color', '#fff');
         } else {
             document.body.classList.add('dark-mode');
             this.setState({ mode: 'dark' });
@@ -51,6 +52,7 @@ class Navbar extends Component {
             root.style.setProperty('--footer-icon', '#bdd1f1');
             root.style.setProperty('--card-bg', '#0a0a0abf');
             root.style.setProperty('--card-body-hidden-color', '#fff');
+            root.style.setProperty('--go-to-top-icon-color', '#000');
         }
     }
 
@@ -63,6 +65,7 @@ class Navbar extends Component {
         return <div className="navbar-wrapper">
             <ul className="navbar-links-list">
                 <li><Link to="about-wrapper" spy={true} smooth={true} duration={500}>About</Link></li>
+                {/* <li><Link to="timeline-wrapper" spy={true} smooth={true} duration={500}>Timeline</Link></li> */}
                 <li><Link to="projects-wrapper" spy={true} smooth={true} duration={500}>Projects</Link></li>
                 <li><Link to="resume-wrapper" spy={true} smooth={true} duration={500}>Resume</Link></li>
                 <li><Link to="contact-wrapper" spy={true} smooth={true} duration={500}>Contact</Link></li>

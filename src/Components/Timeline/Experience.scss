@@ -1,0 +1,38 @@
+@import '../../Assets/variables.scss';
+
+.timeline-wrapper {
+    margin-top: 10em;
+    text-align: center;
+}
+
+.timeline-component {
+    background-color: $anchor-link-color;
+    margin-top: 4em;
+    height: 5px;
+    width: 90%;
+    margin-left: 5%;
+    // display: flex;
+    // align-items: center;
+}
+
+.timeline-elements-wrapper {
+    display: flex;
+}
+
+.timeline-element {
+    height: 1em;
+    width: 1em;
+    background: pink;
+    border-radius: 50%;
+    // margin: 0 12em;
+    margin-left: 15%;
+}
+
+.timeline-sub-element {
+    width: 20em;
+    height: 20em;
+    background: pink;
+    margin-top: 2em;
+    margin-right: 9em;
+    margin-left: -9em;
+}
